@@ -13,6 +13,8 @@
 		04B53DA327F49A770089CF0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B53D9127F49A740089CF0B /* ContentView.swift */; };
 		04B53DA427F49A770089CF0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B53D9227F49A770089CF0B /* Assets.xcassets */; };
 		04B53DA527F49A770089CF0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B53D9227F49A770089CF0B /* Assets.xcassets */; };
+		04B53DB027F4A1660089CF0B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B53DAF27F4A1660089CF0B /* PrimaryButton.swift */; };
+		04B53DB127F4A1660089CF0B /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B53DAF27F4A1660089CF0B /* PrimaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,7 @@
 		04B53D9727F49A770089CF0B /* CountryGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B53D9D27F49A770089CF0B /* CountryGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B53D9F27F49A770089CF0B /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		04B53DAF27F4A1660089CF0B /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				04B53D9027F49A740089CF0B /* CountryGuesserApp.swift */,
-				04B53D9127F49A740089CF0B /* ContentView.swift */,
-				04B53D9227F49A770089CF0B /* Assets.xcassets */,
+				04B53DAE27F49CDF0089CF0B /* Views */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -76,6 +78,16 @@
 				04B53D9F27F49A770089CF0B /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		04B53DAE27F49CDF0089CF0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04B53D9127F49A740089CF0B /* ContentView.swift */,
+				04B53DAF27F4A1660089CF0B /* PrimaryButton.swift */,
+				04B53D9227F49A770089CF0B /* Assets.xcassets */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B53DB027F4A1660089CF0B /* PrimaryButton.swift in Sources */,
 				04B53DA227F49A770089CF0B /* ContentView.swift in Sources */,
 				04B53DA027F49A770089CF0B /* CountryGuesserApp.swift in Sources */,
 			);
@@ -185,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04B53DB127F4A1660089CF0B /* PrimaryButton.swift in Sources */,
 				04B53DA327F49A770089CF0B /* ContentView.swift in Sources */,
 				04B53DA127F49A770089CF0B /* CountryGuesserApp.swift in Sources */,
 			);
