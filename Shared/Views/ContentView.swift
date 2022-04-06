@@ -9,24 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing: 40) {
-            VStack(spacing: 20) {
-                Text("Country Guesser")
-                    .font(.title)
-                    .fontWeight(.heavy)
-                    .foregroundColor(Color("AccentColor"))
+        NavigationView {
+            VStack(spacing: 40) {
+                VStack(spacing: 20) {
+                    Text("Country Guesser")
+                        .orangeTitle()
+                    
+                    Text("How many can you get?")
+                        .foregroundColor(Color("AccentColor"))
+                    
+                }
                 
-                Text("How many can you get?")
-                    .foregroundColor(Color("AccentColor"))
+                NavigationLink {
+                    GuessView()
+                } label: {
+                    PrimaryButton(text: "Start!")
+                }
+                
                 
             }
-            
-            PrimaryButton(text: "Start!")
-            
-        }
-        .frame (maxWidth: .infinity, maxHeight: .infinity)
-        .edgesIgnoringSafeArea(.all)
+            .frame (maxWidth: .infinity, maxHeight: .infinity)
+            .edgesIgnoringSafeArea(.all)
         .background(Color(red: 0.12, green: 0.24, blue: 0.32))
+        }
     }
 }
 
